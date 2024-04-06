@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anytime Fitness</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url(../images/bg.jpg.jpg);
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .left{
+       /* border: 2px solid red; */
+       display: inline-block;
+       position: absolute;
+       left: 39px;
+       top: 20px;
+    }
+    .left img{
+        width: 36px;
+        filter: invert(100%);
+        
+    }
+    .left div{
+        text-align: center;
+        line-height: 12px;
+    }
+    .mid{
+      /* border: 2px solid green; */
+      display: block;
+      width: 40%;
+      margin: 20px auto;
+    }
+    .right{
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 30px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar li a{
+        color: rgb(222, 168, 68);
+        text-decoration: none;
+        padding: 34px 18px;
+        font-weight: bold;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        margin: 0px 8px;
+        background-color: black;
+        color: white;
+        padding: 4px 12px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .btn:hover{
+        background-color: rgb(39, 34, 34);
+    }
+    .container{
+        margin: 144px 76px;
+        width: 32%;
+        padding: 30px 30px;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .group input{
+        text-align: center;
+        width: 170px;
+        display: block;
+        margin: 0px auto;
+        padding: 6px;
+        border: 6px solid black;
+        font-size: 16px;
+        border-radius: 15px;
+
+    }
+    .container button{
+        display: block;
+        width: 30%;
+        margin: auto;
+        padding:10px 15px ;
+        
+    }
+    .container h1{
+    text-align: center;
+    font-size: 18px;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="left">
+          <img src="/images/logo2.jpg.png" alt="">
+          <div>Anytime Fitness</div>
+        </div>
+        <div class="mid">
+          <ul class="navbar">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="btn">Call us now</button>
+          <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="group">
+                <input type="text" name="" placeholder="Enter your phone no.">
+            </div>
+            <div class="group">
+                <input type="text" name="" placeholder="Enter your email id">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+    
+</body>
+</html>

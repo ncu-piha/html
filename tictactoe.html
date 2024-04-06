@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    .navbar{
+        background-color: black;
+        color: orange;
+        
+        padding: 6px;
+        display: flex;
+        align-items: center;
+    }
+    #container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       /* background-color: yellow; */
+       margin-top: 45px;
+        
+    }
+    
+       #grid{
+           display: grid;
+           grid-template-columns: repeat(3,10vw);
+           grid-template-rows: repeat(3,10vw);
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           /* background-color: yellow; */
+           
+           
+           
+       }
+       .box{
+           border: 2px solid black;
+           display: flex;
+           justify-content: center;
+            align-items: center;
+            font-size: 4vw;
+            cursor: pointer;
+           
+       }
+       .box:hover{
+           background-color: rgb(247, 231, 247);
+       }
+       /* utility classes */
+       .br-0{
+           border-right: 0;
+       }
+       .bt-0{
+           border-top: 0;
+       }
+       .bl-0{
+           border-left: 0;
+       }
+       .bb-0{
+           border-bottom: 0;
+       }
+       .gameinfo{
+           padding:34px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+        
+
+    
+</style>
+<body>
+    <div class="navbar">
+       MyTicTacToe.com
+    </div>
+    <div id="container">
+    <div id="grid">
+        <div class="box  bl-0 bt-0" ><span class="boxitem"></span></div>
+        <div class="box bt-0" ><span class="boxitem"></span></div>
+        <div class="box bt-0 br-0" ><span class="boxitem"></span></div>
+        <div class="box bl-0" ><span class="boxitem"></span></div>
+        <div class="box"><span class="boxitem"></span></div>
+        <div class="box br-0"><span class="boxitem"></span></div>
+        <div class="box bl-0 bb-0"><span class="boxitem"></span></div>
+        <div class="box bb-0"><span class="boxitem"></span></div>
+        <div class="box bb-0 br-0"><span class="boxitem"></span></div>
+       
+    </div>
+    <div class="gameinfo">
+        <h2>WELCOME TO MyTicTacToe</h2>
+        <div class="turn">
+            Turn for X
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

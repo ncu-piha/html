@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice piha!!</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    .bulb{
+        background-color: yellow;
+        height: 100px;
+        width: 1007px;
+    }
+    #piha{
+       height: 100px;
+       width: 100px;
+       background-color: blueviolet;
+
+    }
+    #time{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <form action="action.php">
+        <label for="sectionid">
+        <input type="radio" name="section" id="sectiona" value="sectiona">Section A
+    </label>
+    <label for="sectionid">
+        <input type="radio" name="section" id="sectionb" value="sectionb">Section B
+    </label>
+    <label for="sectionid">
+        <input type="radio" name="section" id="sectionc" value="sectionc">Section C
+    </label>
+    <input type="checkbox" name="canteen">
+    </form>
+    <select name="car" id="car">
+        <option value="choose car">Choose car</option>
+        <option value="car A">car A</option>
+        <option value="Car B">Car B</option>
+    </select>
+     <div  id="bulb" class="bulbcontainer bulb"></div>
+     <br>
+     <br>
+     <br>
+     <button onclick="myfunction()">Try it</button>
+     <div id="piha">
+        hey its me!
+     </div>
+
+     <button>Piha</button>
+     <div id="time"></div>
+     <fieldset>
+        <legend>piha</legend>
+        <textarea name="piha" id="nona" cols="30" rows="10"></textarea>
+     </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>

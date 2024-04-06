@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+        
+        /* grid-template-columns: repeat(3,auto); */
+        
+    }
+    .item{
+        border: 2px solid black;
+        margin: 4px 5px;
+        padding: 3px 2px;
+        background-color: purple;
+        color: white;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+    @media only screen and (max-width: 1723px){
+         
+         footer{
+            bottom: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+    }
+}
+    @media only screen and (max-width:561px){
+        footer{
+            bottom: 0;
+        }
+    
+        
+        .container{
+            display: grid;
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+
+        }
+    }
+    @media only screen and (max-width:394px){
+        .container{
+            display: grid;
+            grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer';
+
+        }
+    }
+</style>
+<body>
+    <div class="container">
+    <div id="navbar" class="item">
+        Home About Contact Us
+    </div>
+    <div id="section" class="item">
+        icing elit. Non iste quibusdam esse voluptas laboriosam numquam voluptate nihil a cum illo magni repellendus aut deleniti dicta voluptatem ducimus mollitia nobis sequi enim iure, sunt culpa. Ipsa quibusdam dolore totam officia incidunt eligendi, quam corrupti non cum itaque velit vel voluptatibus consectetur sunt nihil, dolorem aut? Velit voluptates dignissimos ea non inventore mollitia exercitationem perferendis consequatur molestias voluptatem illo culpa aspernatur sint modi hic deleniti impedit officia aut debitis facilis, autem soluta rerum laudantium? Repellat aliquam dicta at repudiandae veritatis iste nostrum libero? Omnis ipsum earum officiis officia, laborum incidunt natus voluptatibus placeat maxime mollitia facilis praesentium ut. Sequi nam sapiente nemo suscipit accusamus placeat quos soluta doloribus? Fuga vel quis esse excepturi, odit repellendus hic at consequuntur iste impedit aperiam sit dolores voluptate placeat. Consectetur ut temporibus fugit? Ad non libero impedit expedita iste, nihil quidem incidunt optio, dolores esse mollitia reprehenderit soluta voluptatibus porro numquam eos dicta eligendi, perferendis culpa repellendus ut quod quis dolore? Quasi enim assumenda cum animi nisi aliquid tempora fugiat et. Minima, repellendus dicta. Cumque nihil repellendus vitae. Atque ex inventore minus possimus cum alias! Error facere delectus exercitationem. Alias illum doloremque ullam, maxime porro provident placeat iste aliquid nulla. Itaque laborum perspiciatis quod dolore accusantium quos in cumque? Ducimus facere eveniet suscipit distinctio consequatur accusamus nisi ex fugit enim cumque doloremque officiis doloribus, nihil repellendus placeat porro officia facilis eaque, dolores voluptates ratione quae. Suscipit, aliquam magnam! Possimus unde vel laudantium exercitationem, sapiente consequuntur, nulla eligendi delectus, excepturi nesciunt iure cumque voluptatem iusto voluptas molestiae ducimus culpa maiores magnam dolorem! Illum suscipit voluptates earum nisi, eius dolores perferendis quae autem omnis exercitationem perspiciatis? Voluptate eius expedita autem sapiente quidem deleniti pariatur, odit quaerat, eaque officiis laudantium hic quod nisi beatae, maxime ab aspernatur architecto eos soluta dolorem qui cumque saepe tenetur! Corporis ullam quia hic unde aliquid necessitatibus! Aut quae minima voluptatum magni tempore unde, illo eos, atque officiis dolorem molestiae modi officia cum autem aperiam fugiat obcaecati, facere natus numquam. Explicabo ipsa tenetur accusamus suscipit autem similique amet. Quod suscipit, blanditiis autem nam expedita eveniet aut rerum harum! Molestias minima incidunt est voluptatibus velit accusamus. Ad, modi itaque debitis delectus pariatur nisi saepe? Voluptates rem cumque, debitis corporis dolor modi quaerat, officiis repudiandae cupiditate a, perspiciatis officia quia. Saepe voluptatem, repudiandae iure iste sunt laboriosam eos, adipisci ipsa inventore doloremque esse cumque eaque ab?
+    </div>
+    <div id="aside" class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, exercitationem blanditiis ab voluptatum dolor quibusdam dolorum fugit fuga nobis expedita perspiciatis amet aspernatur minima non? Ratione reprehenderit tempore qui corporis?
+    </div>
+    <footer class="item">
+        copyright rifhts are reserved!!!!!lorem12
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, explicabo. Minima, provident?
+    </footer>
+    </div>
+    <!-- <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+    </div> -->
+</body>
+</html>

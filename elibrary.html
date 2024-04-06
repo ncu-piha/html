@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-lebrary</title>
+    </head>
+    <body>
+        <h2>Welcome to E-Library</h2>
+        <fieldset>
+
+        <legend>Personal particulars</legend>
+        <form action="Elibrary" method="post">
+            Name: <input type="text" name="username"><br><br>
+            Password:<input type="text" name="password"><br><br>
+            Qualification: <select name="qualification" id="">
+                <option value="">10+2</option>
+                <option value="">Undergraduate</option>
+                <option value="">Postgraduate</option>
+            </select>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Languages</legend>
+        <input type="checkbox" name="language" value="Sanskrit" />Sanskrit
+        <input type="checkbox" name="language" value="English" checked />English
+        <input type="checkbox" name="language" value="Hindi" />Hindi
+        <input type="checkbox" name="language" value="French" />French
+    </fieldset>
+
+    <fieldset>
+        <legend>Book Facts</legend>
+        <textarea rows="5" cols="30" name="instruction">For fun...write your favourite books here!!</textarea>
+    </fieldset>
+
+    <input type="hidden" name="secret" value="888" /><br>
+    <input type="submit" value="SEND" />
+    <input type="reset" value="CLEAR" />
+    
+    </body>
+    </html>
